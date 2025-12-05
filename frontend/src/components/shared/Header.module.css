@@ -1,0 +1,45 @@
+/*.parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--space-md) var(--space-xl);
+	background: linear-gradient(180deg, var(--color-warm-beige), var(--color-background));
+	box-shadow: var(--shadow-sm);
+	border-bottom: 3px solid var(--color-meadow-green);
+}*/
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) var(--space-xl);
+    background: linear-gradient(180deg, var(--color-warm-beige), var(--color-background));
+    box-shadow: var(--shadow-sm);
+    border-bottom: 3px solid var(--color-meadow-green);
+
+    /* Ajout pour rendre le header fixe */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+.parent > div:last-child {
+	display: flex;
+	gap: var(--space-lg);
+	align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.parent {
+		padding: var(--space-sm) var(--space-md);
+		flex-direction: column;
+		gap: var(--space-sm);
+	}
+	
+	.parent > div:last-child {
+		gap: var(--space-md);
+	}
+}

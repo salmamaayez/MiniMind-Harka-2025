@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+*/node_modules/
+
+# Environment files
+.env
+*.env
+*/.env
+/.env
+
+# Python cache
+__pycache__/
+*/__pycache__/
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+*/venv/
+*/.venv/
+
+# OS / Editor ignores
+.DS_Store
+Thumbs.db
